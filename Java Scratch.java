@@ -1,3 +1,5 @@
+import java.util.jar.Attributes.Name;
+
 class Java_Scratch {
   
     public static void main(String[] args) {
@@ -80,12 +82,78 @@ class Java_Scratch {
 
       System.out.println(("###"));
 
-      String name = "Rafael Saibro ";
-      System.out.println(name);
+      String FullName = "Rafael Saibro ";
+      System.out.println(FullName);
 
-      //Testando GitHub
-      //Test 2
+      // Testando GitHub
+      // Test 2
+
+      String literalString1 = "ABC";
+      String literalString2 = "ABC";
+
+      String objectString1 = new String("xyz");
+      String objectString2 = new String("xyz");
+
+      System.out.println(literalString1 == literalString2);
+      System.out.println(objectString1 == objectString2);
+
+      System.out.println(("###"));
+
+      System.out.println("HELLO! I am Rafael. I am from Brazil and I am 25 years old.");
+
+      String name = "Rafael"; 
+      String country = "Brazil";
+      age = 25;
       
+      System.out.println("Hello! I am " + name + ". I am from " + country + " and I am " + age + " years old. ");
+
+      String formattedString = String.format("hello! I am %s. I am from %s and I am %d years old.", name, country, age);
+      System.out.println(formattedString);
+      System.out.println("Tem " + name.length() + " letras no meu nome");
+      name = "";
+      System.out.println(name.isEmpty());
+      name = "Rafa";
+      System.out.println(name.toUpperCase());
+      System.out.println(name.toLowerCase());
+      
+      String string1 = new String("qwerty");
+      String string2 = new String("QWERTY");
+      System.out.println(string1 == string2);
+      System.out.println(string1.equals(string2));
+      System.out.println(string1.equalsIgnoreCase(string2));
+      
+      String ceu = "The sky is blue.";
+      System.out.println(ceu.replace("blue", "red"));
+      System.out.println(ceu);
+      String updatedCeu = ceu.replace("blue", "red");
+      System.out.println(updatedCeu);
+
+      System.out.println(ceu.contains("sky"));
+
+
+
+
+
+
+
+      
+
+      
+
+
+
+
+      
+
+    
+
+
+  
+
+
+
+
+
 
 
 
@@ -118,6 +186,16 @@ class Java_Scratch {
 
       // # characters
       // char copyryghtSymbol = '\u00A9'
+
+      // Format Specifiers
+      // %c - Character.
+      // %d - Decimal number (base 10)
+      // %e - Exponential floating-point number.
+      // %f - Floating-point number.
+      // %i - Integer (base 10)
+      // %o - Octal number (base 8)
+      // %s - String.
+      // %u - Unsigned decimal (integer) number.
 
 
     }
