@@ -136,6 +136,8 @@ class Java_Scratch {
 
 
 
+
+
       
 
       
@@ -196,6 +198,13 @@ class Java_Scratch {
       // %o - Octal number (base 8)
       // %s - String.
       // %u - Unsigned decimal (integer) number.
+
+      // GitHub to go
+      // git init
+      // git status
+      // git add .
+      // git status
+      // git commit -m " ""
 
 
     }
