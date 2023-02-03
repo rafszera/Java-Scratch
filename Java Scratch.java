@@ -67,14 +67,14 @@ class Java_Scratch {
 
       //System.out.println(("###"));
 
-      int score = 0;
-      int turns = 10;
+      // int score = 0;
+      // int turns = 10;
 
-      score++;
-      turns--;
+      // score++;
+      // turns--;
 
-      System.out.println("pontuação " + score);
-      System.out.println("turnos " + turns);
+      // System.out.println("pontuação " + score);
+      // System.out.println("turnos " + turns);
 
       //int number = 55;
       //System.out.println(--number);
@@ -119,33 +119,66 @@ class Java_Scratch {
       // System.out.println(string1.equals(string2));
       // System.out.println(string1.equalsIgnoreCase(string2));
       
-      String ceu = "The sky is blue.";
-      System.out.println(ceu.replace("blue", "red"));
-      System.out.println(ceu);
-      String updatedCeu = ceu.replace("blue", "red");
-      System.out.println(updatedCeu);
+      // String ceu = "The sky is blue.";
+      // System.out.println(ceu.replace("blue", "red"));
+      // System.out.println(ceu);
+      // String updatedCeu = ceu.replace("blue", "red");
+      // System.out.println(updatedCeu);
 
-      System.out.println(ceu.contains("sky"));
+      // System.out.println(ceu.contains("sky"));
 
 
       Scanner scanner = new Scanner(System.in);
-
-
-      System.out.printf("Whats is your name? ");
-      String name = scanner.nextLine();
-
-      System.out.printf("Hello %s, How old are you? ", name);
-      int age = Integer.parseInt(scanner.nextLine());
       
-      //cleans up the input buf
-      //scanner.nextLine()
+      System.out.print("Enter the first number: ");
+      double number1 = scanner.nextDouble();
+      scanner.nextLine();
+
+      System.out.print("Enter the second number: ");
+      double number2 = scanner.nextDouble();
+      scanner.nextLine();
+
+      System.out.print("What operation do you want to perform? ");
+      String operation = scanner.nextLine();
+
+      if (operation.equals("sum")) {
+        System.out.printf("%f + %f = %f", number1,number2, number1 + number2);
+      } else if (operation.equals("sub")) { 
+        System.out.printf("%f - %f = %f", number1,number2, number1 - number2);
+      } else if (operation.equals("mult")) {
+        System.out.printf("%f * %f = %f", number1,number2, number1 * number2);
+      } else if (operation.equals("div")) {
+        if (number2 == 0) {
+        System.out.println("Can not divide by zero.");  
+        } else {
+          System.out.printf("%f / %f = %f", number1,number2, number1 / number2);       
+        }
+      } else {
+        System.out.printf("%s is not a supported operation.", operation);
+      }
+
+      
+
+
+
+
+      // System.out.printf("Whats is your name? ");
+      // String name = scanner.nextLine();
+
+      // System.out.printf("Hello %s, How old are you? ", name);
+      // int age = Integer.parseInt(scanner.nextLine());
+      
+      // //cleans up the input buf
+      // //scanner.nextLine()
                    
-      System.out.printf("%d is an excellent age to start programming. What language do you prefer? ", age);
-      String language = scanner.nextLine();
+      // System.out.printf("%d is an excellent age to start programming. What language do you prefer? ", age);
+      // String language = scanner.nextLine();
       
-      System.out.printf("%s is a very nice popular programming language.", language);
+      // System.out.printf("%s is a very nice popular programming language.", language);
 
       scanner.close();
+
+
 
 
 
