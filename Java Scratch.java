@@ -67,14 +67,14 @@ class Java_Scratch {
 
       //System.out.println(("###"));
 
-      // int score = 0;
-      // int turns = 10;
+      int score = 0;
+      int turns = 10;
 
-      // score++;
-      // turns--;
+      score++;
+      turns--;
 
-      // System.out.println("pontuação " + score);
-      // System.out.println("turnos " + turns);
+      System.out.println("pontuação " + score);
+      System.out.println("turnos " + turns);
 
       //int number = 55;
       //System.out.println(--number);
@@ -141,46 +141,46 @@ class Java_Scratch {
       System.out.print("What operation do you want to perform? ");
       String operation = scanner.nextLine();
 
-      switch (operation) {
-        case "div":
-        if(number2 == 0) {
-          System.out.println("Can not divide by zero.");  
-          } else {
-            System.out.printf("%f / %f = %f", number1,number2, number1 / number2);       
-          }
-         break;
-        case "sum":
-         System.out.printf("%f + %f = %f", number1,number2, number1 + number2);
-         break;
-        case "sub": 
-         System.out.printf("%f - %f = %f", number1,number2, number1 - number2);
-         break;
-        case "mult": 
-         System.out.printf("%f * %f = %f", number1,number2, number1 * number2);
-         break;
-        default:
-         System.out.printf("%s is not a supported operation.", operation);  
-      }
-
-
-
-
-
-      // if (operation.equals("sum")) {
-      //   System.out.printf("%f + %f = %f", number1,number2, number1 + number2);
-      // } else if (operation.equals("sub")) { 
-      //   System.out.printf("%f - %f = %f", number1,number2, number1 - number2);
-      // } else if (operation.equals("mult")) {
-      //   System.out.printf("%f * %f = %f", number1,number2, number1 * number2);
-      // } else if (operation.equals("div")) {
-        // if (number2 == 0) {
-        // System.out.println("Can not divide by zero.");  
-        // } else {
-        //   System.out.printf("%f / %f = %f", number1,number2, number1 / number2);       
-        // }
-      // } else {
-      //   System.out.printf("%s is not a supported operation.", operation);
+      // switch (operation) {
+      //   case "div":
+      //   if(number2 == 0) {
+      //     System.out.println("Can not divide by zero.");  
+      //     } else {
+      //       System.out.printf("%f / %f = %f", number1,number2, number1 / number2);       
+      //     }
+      //    break;
+      //   case "sum":
+      //    System.out.printf("%f + %f = %f", number1,number2, number1 + number2);
+      //    break;
+      //   case "sub": 
+      //    System.out.printf("%f - %f = %f", number1,number2, number1 - number2);
+      //    break;
+      //   case "mult": 
+      //    System.out.printf("%f * %f = %f", number1,number2, number1 * number2);
+      //    break;
+      //   default:
+      //    System.out.printf("%s is not a supported operation.", operation);  
       // }
+
+
+
+
+
+      if (operation.equals("sum")) {
+        System.out.printf("%f + %f = %f", number1,number2, number1 + number2);
+      } else if (operation.equals("sub")) { 
+        System.out.printf("%f - %f = %f", number1,number2, number1 - number2);
+      } else if (operation.equals("mult")) {
+        System.out.printf("%f * %f = %f", number1,number2, number1 * number2);
+      } else if (operation.equals("div")) {
+        if (number2 == 0) {
+        System.out.println("Can not divide by zero.");  
+        } else {
+          System.out.printf("%f / %f = %f", number1,number2, number1 / number2);       
+        }
+      } else {
+        System.out.printf("%s is not a supported operation.", operation);
+      }
 
       
 
