@@ -129,39 +129,39 @@ class Java_Scratch {
       // System.out.println(ceu.contains("sky"));
 
 
-      Scanner scanner = new Scanner(System.in);
+      // Scanner scanner = new Scanner(System.in);
       
-      System.out.print("Enter the first number: ");
-      double number1 = scanner.nextDouble();
-      scanner.nextLine();
+      // System.out.print("Enter the first number: ");
+      // double number1 = scanner.nextDouble();
+      // scanner.nextLine();
 
-      System.out.print("Enter the second number: ");
-      double number2 = scanner.nextDouble();
-      scanner.nextLine();
+      // System.out.print("Enter the second number: ");
+      // double number2 = scanner.nextDouble();
+      // scanner.nextLine();
 
-      System.out.print("What operation do you want to perform? ");
-      String operation = scanner.nextLine();
+      // System.out.print("What operation do you want to perform? ");
+      // String operation = scanner.nextLine();
 
-      switch (operation) {
-        case "div":
-        if(number2 == 0) {
-          System.out.println("Can not divide by zero.");  
-          } else {
-            System.out.printf("%f / %f = %f", number1,number2, number1 / number2);       
-          }
-         break;
-        case "sum":
-         System.out.printf("%f + %f = %f", number1,number2, number1 + number2);
-         break;
-        case "sub": 
-         System.out.printf("%f - %f = %f", number1,number2, number1 - number2);
-         break;
-        case "mult": 
-         System.out.printf("%f * %f = %f", number1,number2, number1 * number2);
-         break;
-        default:
-         System.out.printf("%s is not a supported operation.", operation);  
-      }
+      // switch (operation) {
+      //   case "div":
+      //   if(number2 == 0) {
+      //     System.out.println("Can not divide by zero.");  
+      //     } else {
+      //       System.out.printf("%f / %f = %f", number1,number2, number1 / number2);       
+      //     }
+      //    break;
+      //   case "sum":
+      //    System.out.printf("%f + %f = %f", number1,number2, number1 + number2);
+      //    break;
+      //   case "sub": 
+      //    System.out.printf("%f - %f = %f", number1,number2, number1 - number2);
+      //    break;
+      //   case "mult": 
+      //    System.out.printf("%f * %f = %f", number1,number2, number1 * number2);
+      //    break;
+      //   default:
+      //    System.out.printf("%s is not a supported operation.", operation);  
+      // }
 
 
 
@@ -199,6 +199,19 @@ class Java_Scratch {
 
 
       // char vowels[] = new char [5];
+      int numbers[] = {1, 2, 3, 4, 5};
+
+      // int startingIndex = 0;
+      // int endingIndex = 10;
+
+      // int copy0fNumbers[] = Arrays.copyOfRange(numbers, startingIndex, endingIndex);
+
+
+ 
+      int copy0fNumbers[] = Arrays.copyOf(numbers, numbers.length);
+ 
+      // Arrays.fill(numbers, 0);
+      
       // vowels [0] = 'a';
       // vowels [1] = 'e';
       // vowels [2] = 'i';
@@ -219,7 +232,12 @@ class Java_Scratch {
       // vowels[2] = 'x';
       // System.out.println("The Array length is " + vowels.length);
       // System.out.println(Arrays.toString(vowels));
-      // System.out.println("This array is " + foundItemIndex);   
+      // System.out.println("This array is " + foundItemIndex);  
+      // System.out.println(Arrays.toString(numbers));
+      // System.out.println(Arrays.toString(copy0fNumbers));
+      System.out.println(numbers == copy0fNumbers);
+      System.out.println(Arrays.equals(numbers, copy0fNumbers));
+
 
 
 
