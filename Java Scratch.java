@@ -129,39 +129,39 @@ class Java_Scratch {
       // System.out.println(ceu.contains("sky"));
 
 
-      // Scanner scanner = new Scanner(System.in);
+      Scanner scanner = new Scanner(System.in);
       
-      // System.out.print("Enter the first number: ");
-      // double number1 = scanner.nextDouble();
-      // scanner.nextLine();
+      System.out.print("Enter the first number: ");
+      double number1 = scanner.nextDouble();
+      scanner.nextLine();
 
-      // System.out.print("Enter the second number: ");
-      // double number2 = scanner.nextDouble();
-      // scanner.nextLine();
+      System.out.print("Enter the second number: ");
+      double number2 = scanner.nextDouble();
+      scanner.nextLine();
 
-      // System.out.print("What operation do you want to perform? ");
-      // String operation = scanner.nextLine();
+      System.out.print("What operation do you want to perform? ");
+      String operation = scanner.nextLine();
 
-      // switch (operation) {
-      //   case "div":
-      //   if(number2 == 0) {
-      //     System.out.println("Can not divide by zero.");  
-      //     } else {
-      //       System.out.printf("%f / %f = %f", number1,number2, number1 / number2);       
-      //     }
-      //    break;
-      //   case "sum":
-      //    System.out.printf("%f + %f = %f", number1,number2, number1 + number2);
-      //    break;
-      //   case "sub": 
-      //    System.out.printf("%f - %f = %f", number1,number2, number1 - number2);
-      //    break;
-      //   case "mult": 
-      //    System.out.printf("%f * %f = %f", number1,number2, number1 * number2);
-      //    break;
-      //   default:
-      //    System.out.printf("%s is not a supported operation.", operation);  
-      // }
+      switch (operation) {
+        case "div":
+        if(number2 == 0) {
+          System.out.println("Can not divide by zero.");  
+          } else {
+            System.out.printf("%f / %f = %f", number1,number2, number1 / number2);       
+          }
+         break;
+        case "sum":
+         System.out.printf("%f + %f = %f", number1,number2, number1 + number2);
+         break;
+        case "sub": 
+         System.out.printf("%f - %f = %f", number1,number2, number1 - number2);
+         break;
+        case "mult": 
+         System.out.printf("%f * %f = %f", number1,number2, number1 * number2);
+         break;
+        default:
+         System.out.printf("%s is not a supported operation.", operation);  
+      }
 
 
 
@@ -187,56 +187,38 @@ class Java_Scratch {
 
       // System.out.printf("Whats is your name? ");
       // String name = scanner.nextLine();
-
       // System.out.printf("Hello %s, How old are you? ", name);
-      // int age = Integer.parseInt(scanner.nextLine());
-      
+      // int age = Integer.parseInt(scanner.nextLine());      
       // //cleans up the input buf
-      // //scanner.nextLine()
-                   
+      // //scanner.nextLine()                   
       // System.out.printf("%d is an excellent age to start programming. What language do you prefer? ", age);
-      // String language = scanner.nextLine();
-      
+      // String language = scanner.nextLine();      
       // System.out.printf("%s is a very nice popular programming language.", language);
-
       // scanner.close();
 
 
 
       // char vowels[] = new char [5];
-
       // vowels [0] = 'a';
       // vowels [1] = 'e';
       // vowels [2] = 'i';
       // vowels [3] = 'o';
       // vowels [4] = 'u';
-
       // System.out.println(Arrays.toString(vowels));
-
-
-     char vowels[] = {'e', 'u', 'a', 'o', 'i'};
-
-     int startingIndex = 1;
-     int endingIndex = 4;
-     
-
-     Arrays.fill(vowels, startingIndex, endingIndex, 'x');
-
-
-
+      //  char vowels[] = {'e', 'u', 'a', 'o', 'i'}; 
+      //  int startingIndex = 1;
+      //  int endingIndex = 4;
+      //  Arrays.fill(vowels, startingIndex, endingIndex, 'x');
       // Arrays.sort(vowels);
       // Arrays.sort(vowels, startingIndex, endingIndex);
-
       // int startingIndex = 1;
       // int endingIndex = 4;
       // char key = 'a';
       // int foundItemIndex = Arrays.binarySearch(vowels, startingIndex, endingIndex, key);
       // Arrays.binarySearch(vowels, key);
       // vowels[2] = 'x';
-
-
       // System.out.println("The Array length is " + vowels.length);
-     System.out.println(Arrays.toString(vowels));
+      // System.out.println(Arrays.toString(vowels));
       // System.out.println("This array is " + foundItemIndex);   
 
 
