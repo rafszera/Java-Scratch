@@ -210,7 +210,7 @@ class Java_Scratch {
  
       int copy0fNumbers[] = Arrays.copyOf(numbers, numbers.length);
  
-      // Arrays.fill(numbers, 0);
+      Arrays.fill(numbers, 0);
       
       // vowels [0] = 'a';
       // vowels [1] = 'e';
