@@ -245,14 +245,14 @@ class Java_Scratch {
 
 
 
-      int numbers[] = {1, 2, 3, 4, 5};
+      // int numbers[] = {1, 2, 3, 4, 5};
 
-      int sum = 0;
+      // int sum = 0;
 
-      for(int number : numbers ) {
-        sum += number;
-      }
-      System.out.println(sum);
+      // for(int number : numbers ) {
+      //   sum += number;
+      // }
+      // System.out.println(sum);
 
 
       // System.out.println("Numeros Impar");
@@ -293,6 +293,20 @@ class Java_Scratch {
       // }
   
 
+      int number = 10;
+      int multiplier = 0;
+
+      do {
+        System.out.printf("%d X %d = %d \n", number, multiplier, number * multiplier);
+
+        multiplier++;
+      } while(multiplier <= 10);
+
+      // while(multiplier <=10) {
+      //   System.out.printf("%d X %d = %d \n", number, multiplier, number * multiplier);
+
+      //   multiplier++;
+      // }
 
 
 
