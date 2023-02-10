@@ -1,4 +1,7 @@
 import java.util.Scanner;
+
+import javax.sound.midi.MidiChannel;
+
 import java.util.Arrays;
 class Java_Scratch {
   
@@ -237,15 +240,49 @@ class Java_Scratch {
       // System.out.println(Arrays.equals(numbers, copy0fNumbers));
 
       // System.out.println(Arrays.toString(copy0fNumbers));
+      
+      
 
-      int numbers[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+
+
+      int numbers[] = {1, 2, 3, 4, 5};
 
       int sum = 0;
 
-      for (int index = 0; index < numbers.length; index++) {
-        sum += numbers[index];
+      for(int number : numbers ) {
+        sum += number;
       }
       System.out.println(sum);
+
+
+      // System.out.println("Numeros Impar");
+      // for (int number = 1; number <= 50; number++) {
+      //   if (number % 2 == 1) {
+      //     System.out.println(number);
+      //   }
+      // }
+
+      // for(int number = 1; number <= 10; number++) {
+      //   for (int multiplier = 1; multiplier <= 10; multiplier++) {
+      //     System.out.printf("%d X %d = %d \n", number, multiplier, number * multiplier);
+      //   }
+      // }
+
+      // int number = 5;
+
+      // for (int multiplier = 1; multiplier < 11; multiplier++ ) {
+      //   System.out.printf("%d X %d = %d \n", number, multiplier, number * multiplier);
+      // }
+      
+
+      // int numbers[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+
+      // int sum = 0; 
+
+      // for (int index = 0; index < numbers.length; index++) {
+      //   sum += numbers[index];
+      // }
+      // System.out.println(sum);
 
       // for (int index = 0; index < numbers.length; index++) {
       //   System.out.println(numbers[index]);
