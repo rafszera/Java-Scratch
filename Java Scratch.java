@@ -199,7 +199,7 @@ class Java_Scratch {
 
 
       // char vowels[] = new char [5];
-      int numbers[] = {1, 2, 3, 4, 5};
+      // int numbers[] = {1, 2, 3, 4, 5};
 
       // int startingIndex = 0;
       // int endingIndex = 10;
@@ -208,9 +208,9 @@ class Java_Scratch {
 
 
  
-      int copy0fNumbers[] = Arrays.copyOf(numbers, numbers.length);
+      // int copy0fNumbers[] = Arrays.copyOf(numbers, numbers.length);
  
-      Arrays.fill(numbers, 0);
+      // Arrays.fill(numbers, 0);
       
       // vowels [0] = 'a';
       // vowels [1] = 'e';
@@ -233,11 +233,28 @@ class Java_Scratch {
       // System.out.println("The Array length is " + vowels.length);
       // System.out.println(Arrays.toString(vowels));
       // System.out.println("This array is " + foundItemIndex);  
-      // System.out.println(Arrays.toString(numbers));
-      // System.out.println(Arrays.toString(copy0fNumbers));
-      System.out.println(numbers == copy0fNumbers);
-      System.out.println(Arrays.equals(numbers, copy0fNumbers));
+      // System.out.println(Arrays.toString(numbers));    // System.out.println(numbers == copy0fNumbers);
+      // System.out.println(Arrays.equals(numbers, copy0fNumbers));
 
+      // System.out.println(Arrays.toString(copy0fNumbers));
+
+      int numbers[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+
+      int sum = 0;
+
+      for (int index = 0; index < numbers.length; index++) {
+        sum += numbers[index];
+      }
+      System.out.println(sum);
+
+      // for (int index = 0; index < numbers.length; index++) {
+      //   System.out.println(numbers[index]);
+      // }
+
+      // for (int number = 1; number <=10; number++) {
+      //   System.out.println(number);
+      // }
+  
 
 
 
