@@ -295,19 +295,19 @@ class Java_Scratch {
 
       // ### WHILE DO LOOPS ###
 
-      int number = 10;
-      int multiplier = 0;
+      // int number = 10;
+      // int multiplier = 0;
 
-      do {
-        System.out.printf("%d X %d = %d \n", number, multiplier, number * multiplier);
+      // do {
+      //   System.out.printf("%d X %d = %d \n", number, multiplier, number * multiplier);
 
-        multiplier++;
-      } while(multiplier <= 10);
+      //   multiplier++;
+      // } while(multiplier <= 10);
 
-      while(multiplier <=10) {
-        System.out.printf("%d X %d = %d \n", number, multiplier, number * multiplier);
+      // while(multiplier <=10) {
+      //   System.out.printf("%d X %d = %d \n", number, multiplier, number * multiplier);
 
-        multiplier++;
+      //   multiplier++;
       }
 
 
