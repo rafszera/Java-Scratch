@@ -275,9 +275,9 @@ class Java_Scratch {
       // }
       
 
-      // int numbers[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+      int numbers[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 
-      // int sum = 0; 
+      int sum = 0; 
 
       // for (int index = 0; index < numbers.length; index++) {
       //   sum += numbers[index];
@@ -288,9 +288,9 @@ class Java_Scratch {
       //   System.out.println(numbers[index]);
       // }
 
-      // for (int number = 1; number <=10; number++) {
-      //   System.out.println(number);
-      // }
+      for (int number = 1; number <=10; number++) {
+        System.out.println(number);
+      }
   
 
       // ### WHILE DO LOOPS ###
@@ -308,7 +308,7 @@ class Java_Scratch {
       //   System.out.printf("%d X %d = %d \n", number, multiplier, number * multiplier);
 
       //   multiplier++;
-      }
+      // }
 
 
 
