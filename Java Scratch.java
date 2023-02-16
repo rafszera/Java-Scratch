@@ -2,6 +2,10 @@ import java.util.Scanner;
 
 import javax.sound.midi.MidiChannel;
 
+import java.util.ArrayList;
+
+import java.util.Comparator;
+
 import java.util.Arrays;
 class Java_Scratch {
   
@@ -309,6 +313,47 @@ class Java_Scratch {
 
       //   multiplier++;
       // }
+
+      ArrayList<Integer> numbers = new ArrayList<Integer>();
+
+      numbers.add(5); // 0
+      numbers.add(3); // 1
+      numbers.add(1); // 2
+      numbers.add(4); // 3
+      numbers.add(2); // 4
+
+      // numbers.sort(Comparator.naturalOrder());
+
+      System.out.println("before " + numbers.toString());
+
+      numbers.forEach(number ->{
+        numbers.set(numbers.indexOf(number), number * 2);
+        // System.out.println(number * 2);
+      });
+
+      System.out.println("after " + numbers.toString());
+
+      
+      
+      // numbers.sort(Comparator.reverseOrder());  
+      // numbers.sort(Comparator.naturalOrder());
+
+
+      // numbers.set(2, Integer.valueOf(30));
+      // numbers.clear();
+      // numbers.remove(Integer.valueOf(4));
+
+      // System.out.println(numbers.toString());
+      // System.out.println(numbers.get(2));
+      // System.out.println(numbers.size());
+      // System.out.println(numbers.contains(Integer.valueOf(10)));
+      // System.out.println(numbers.isEmpty());
+
+
+
+  
+
+
 
 
 
