@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+import java.time.LocalDate;
+
 import java.util.HashMap;
 
 import javax.sound.midi.MidiChannel;
@@ -13,6 +15,7 @@ import java.util.Arrays;
 class Java_Scratch {
   
     public static void main(String[] args) {
+
     //System.out.println("Hello world!");
     //System.out.println("Hello");
     
@@ -357,36 +360,50 @@ class Java_Scratch {
       // ## HASH MAPS ##
 
 
-      HashMap<String, Integer> examScores = new HashMap<String, Integer>();
+      // HashMap<String, Integer> examScores = new HashMap<String, Integer>();
       
-      examScores.put("Math", 75);
-      examScores.put("Socialogy", 85);
-      examScores.put("English", 100);
-      examScores.put("Bio", 81);
-      examScores.put("Religion", 60);      
+      // examScores.put("Math", 75);
+      // examScores.put("Socialogy", 85);
+      // examScores.put("English", 100);
+      // examScores.put("Bio", 81);
+      // examScores.put("Religion", 60);      
       
-      examScores.remove("Religion");
-      examScores.putIfAbsent("Math", 90);
-      examScores.replace("Bio", 90);
+      // examScores.remove("Religion");
+      // examScores.putIfAbsent("Math", 90);
+      // examScores.replace("Bio", 90);
 
-      examScores.forEach((subject, score) -> {        
-        examScores.replace(subject, score - 10);  
+      // examScores.forEach((subject, score) -> {        
+      //   examScores.replace(subject, score - 10);  
              
-      });
+      // });
       
 
       // examScores.clear();
 
       
-      System.out.println("Removed Points -10");
-      System.out.println(examScores.toString());
+      // System.out.println("Removed Points -10");
+      // System.out.println(examScores.toString());
       
-      System.out.println(examScores.size());
-      System.out.println(examScores.containsKey("Math"));
-      System.out.println(examScores.containsValue(100));
-      System.out.println(examScores.isEmpty());
+      // System.out.println(examScores.size());
+      // System.out.println(examScores.containsKey("Math"));
+      // System.out.println(examScores.containsValue(100));
+      // System.out.println(examScores.isEmpty());
       // System.out.println(examScores.get("Computer Programing"));
 
+
+      // ## OBJECT ORIENTED ##
+      
+      User youngerUser = new User();
+      youngerUser.name = "Rafael Saibro";
+      youngerUser.birthDay = LocalDate.parse("1998-01-08");
+
+      User olderUser =  new User();
+      olderUser.name = "Rafael Saibro Senior";
+      olderUser.birthDay = LocalDate.parse("1975-01-08");
+
+      System.out.printf("%s was born back in %s and he is now %d years old", youngerUser.name, youngerUser.birthDay.toString(), youngerUser.age());
+      
+      System.out.printf("%s was born back in %s and he is now %d years old", olderUser.name, olderUser.birthDay.toString(), olderUser.age());
 
 
   

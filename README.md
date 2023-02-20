@@ -3,31 +3,32 @@
 
 List of codes learned
 
+#######################
 
-Variables 
+Variables [x]
 
-Data types
+Data types [x]
 
-Operators
+Operators [x]
 
-Strings
+Strings [x]
 
-User inputs
+User inputs [x]
 
-Conditional Statements
+Conditional Statements [x]
 
-Switch Cases
+Switch Cases [x]
 
-Arrays
+Arrays [x]
 
-For Loops
+For Loops [x]
 
-While Loops
+While Loops [x]
 
-Do While Loops
+Do While Loops [x]
 
-ArrayLists
+ArrayLists [x]
 
-HashMaps
+HashMaps [x]
 
-Objetct Oriented Programming _WIP_ 
+Objetct Oriented Programming [_WIP_] 
