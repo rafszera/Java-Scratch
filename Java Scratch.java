@@ -1,7 +1,10 @@
 import java.util.Scanner;
 
+import java.util.HashMap;
+
 import javax.sound.midi.MidiChannel;
 
+import java.lang.ProcessBuilder.Redirect.Type;
 import java.util.ArrayList;
 
 import java.util.Comparator;
@@ -314,27 +317,29 @@ class Java_Scratch {
       //   multiplier++;
       // }
 
-      ArrayList<Integer> numbers = new ArrayList<Integer>();
 
-      numbers.add(5); // 0
-      numbers.add(3); // 1
-      numbers.add(1); // 2
-      numbers.add(4); // 3
-      numbers.add(2); // 4
+      // ## ARRAY LISTS ##
+
+      // ArrayList<Integer> numbers = new ArrayList<Integer>();
+
+      // numbers.add(5); // 0
+      // numbers.add(3); // 1
+      // numbers.add(1); // 2
+      // numbers.add(4); // 3
+      // numbers.add(2); // 4
 
       // numbers.sort(Comparator.naturalOrder());
 
-      System.out.println("before " + numbers.toString());
+      // System.out.println("before " + numbers.toString());
 
-      numbers.forEach(number ->{
-        numbers.set(numbers.indexOf(number), number * 2);
-        // System.out.println(number * 2);
-      });
+      // numbers.forEach(number ->{
+      //   numbers.set(numbers.indexOf(number), number * 2);
+      //   System.out.println(number * 2);
+      // });
 
-      System.out.println("after " + numbers.toString());
+      // System.out.println("after " + numbers.toString());
 
-      
-      
+
       // numbers.sort(Comparator.reverseOrder());  
       // numbers.sort(Comparator.naturalOrder());
 
@@ -348,6 +353,39 @@ class Java_Scratch {
       // System.out.println(numbers.size());
       // System.out.println(numbers.contains(Integer.valueOf(10)));
       // System.out.println(numbers.isEmpty());
+
+      // ## HASH MAPS ##
+
+
+      HashMap<String, Integer> examScores = new HashMap<String, Integer>();
+      
+      examScores.put("Math", 75);
+      examScores.put("Socialogy", 85);
+      examScores.put("English", 100);
+      examScores.put("Bio", 81);
+      examScores.put("Religion", 60);      
+      
+      examScores.remove("Religion");
+      examScores.putIfAbsent("Math", 90);
+      examScores.replace("Bio", 90);
+
+      examScores.forEach((subject, score) -> {        
+        examScores.replace(subject, score - 10);  
+             
+      });
+      
+
+      // examScores.clear();
+
+      
+      System.out.println("Removed Points -10");
+      System.out.println(examScores.toString());
+      
+      System.out.println(examScores.size());
+      System.out.println(examScores.containsKey("Math"));
+      System.out.println(examScores.containsValue(100));
+      System.out.println(examScores.isEmpty());
+      // System.out.println(examScores.get("Computer Programing"));
 
 
 
