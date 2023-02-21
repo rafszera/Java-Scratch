@@ -393,17 +393,27 @@ class Java_Scratch {
 
       // ## OBJECT ORIENTED ##
       
-      User youngerUser = new User();
-      youngerUser.name = "Rafael Saibro";
-      youngerUser.birthDay = LocalDate.parse("1998-01-08");
+      User user = new User();
+      user.name = "Rafael Saibro";
+      user.birthDay = LocalDate.parse("1998-01-08");
 
-      User olderUser =  new User();
-      olderUser.name = "Rafael Saibro Senior";
-      olderUser.birthDay = LocalDate.parse("1975-01-08");
-
-      System.out.printf("%s was born back in %s and he is now %d years old", youngerUser.name, youngerUser.birthDay.toString(), youngerUser.age());
+      Book book = new Book();
       
-      System.out.printf("%s was born back in %s and he is now %d years old", olderUser.name, olderUser.birthDay.toString(), olderUser.age());
+      book.tittle = "Fire and Blood";
+      book.author = "George Martin";
+
+      user.borrow(book);
+
+
+      // User olderUser =  new User();
+      // olderUser.name = "Rafael Saibro Senior";
+      // olderUser.birthDay = LocalDate.parse("1975-01-08");
+
+      System.out.printf("%s was born back in %s and he is now %d years old \n", user.name, user.birthDay.toString(), user.age());
+      System.out.printf("%s has borrowed these books: %s \n", user.name, user.books.toString());
+
+      
+      // System.out.printf("%s was born back in %s and he is now %d years old", olderUser.name, olderUser.birthDay.toString(), olderUser.age());
 
 
   
