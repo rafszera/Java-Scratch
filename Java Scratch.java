@@ -397,12 +397,16 @@ class Java_Scratch {
       // user.name = "Rafael Saibro";
       // user.birthDay = LocalDate.parse("1998-01-08");
 
-      Book book = new Book();
+      Book FireandBlood = new Book("Fire and Blood", "George Martin", 500);
       
-      book.tittle = "Fire and Blood";
-      book.author = "George Martin";
+      // book.tittle = "Fire and Blood";
+      // book.author = "George Martin";
 
-      user.borrow(book);
+      AudioBook Dracula = new AudioBook("Dracula", "Bram Stoker", 1560);
+
+      Ebook jeeves = new Ebook("Carry On Jeeves", "P.G. Wodehouse", 280, "PDF");
+
+      user.borrow(FireandBlood);
 
 
       // User olderUser =  new User();
@@ -410,7 +414,9 @@ class Java_Scratch {
       // olderUser.birthDay = LocalDate.parse("1975-01-08");
 
       System.out.printf("%s was born back in %s and he is now %d years old \n", user.getName(), user.getBirthDay(), user.age());
-      System.out.printf("%s has borrowed these books: %s \n", user.getName(), user.books.toString());
+      System.out.printf("%s has borrowed these books: %s, with %s pages \n", user.getName(), FireandBlood.toString(), user.pageCount());
+      System.out.printf("%s did borrowed these AudioBook: %s, with %s minutes \n", user.getName(), Dracula.toString(), user.runTime());
+      System.out.println(jeeves.toString()); 
 
       
       // System.out.printf("%s was born back in %s and he is now %d years old", olderUser.name, olderUser.birthDay.toString(), olderUser.age());

@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class User {
     private String name;
     private LocalDate birthDay;
-    public ArrayList<Book> books = new ArrayList<Book>();
+    private ArrayList<Book> books = new ArrayList<Book>();
 
     User(String name, String birthDay) {
         this.name = name;
@@ -20,6 +20,10 @@ public class User {
         return this.birthDay.toString();
     }
 
+    public String borrowedBooks() {
+        return this.books.toString();
+    }
+
     public void borrow(Book book) {
         this.books.add(book);
          
@@ -30,5 +34,18 @@ public class User {
 
         return age.getYears();
     }
+
+    public Object pageCount() {
+        return 500;
+    }
+
+    public Object getpageCount() {
+        return 500;
+    }
+
+    public Object runTime() {
+        return 1560;
+    }
+
     
 }
